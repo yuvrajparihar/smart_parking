@@ -10,9 +10,9 @@ const Header=()=> {
                 <h3>Park here</h3>
             </Link>
             <div className='right menu'>
-                <div className='item'>Host</div>
-                <div className='item'> SignUp</div>
-                <div className='item'>SignIn</div>
+                <Link to='/host' className='item'>Host</Link>
+                <Link to='/signIn' className='item'> SignUp</Link>
+                <Link to='/signUp' className='item'>SignIn</Link>
             </div>
             </div>   
         </div>

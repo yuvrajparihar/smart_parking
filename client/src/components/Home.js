@@ -1,10 +1,10 @@
 import React from 'react'
 import {Field,reduxForm} from 'redux-form'
+import history from '../history'
 
 
 class Home extends React.Component {
     renderInput({input,meta}){
-        console.log(meta.error)
         return(
             <div className='field'>
             <input {...input} autoComplete='off' placeholder='location..'/>
@@ -14,8 +14,9 @@ class Home extends React.Component {
             </div>
         )
     }
-    onSubmit(formValues){
+    onSubmit= async (formValues)=>{
         console.log(formValues)
+        history.push('/list')
     }
     render(){
         return (

@@ -1,0 +1,11 @@
+.list-item{
+    display: flex !important;
+    align-items: center;
+    cursor: pointer;
+    height:125px;
+    
+}
+
+.list-item.item img{  
+    max-width: 140px;
+    }
