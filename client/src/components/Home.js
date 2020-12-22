@@ -3,6 +3,7 @@ import {Field,reduxForm} from 'redux-form'
 import history from '../history'
 
 
+
 class Home extends React.Component {
     renderInput({input,meta}){
         return(
@@ -20,12 +21,12 @@ class Home extends React.Component {
     }
     render(){
         return (
-            
+            <div>
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui error form">
-                    <Field name='location' component={this.renderInput}/>
-                    <button className='ui primary button'>Search</button>
+                   <Field name='location' component={this.renderInput}/>
+                    <button  className='ui primary button'>Search</button>
                 </form>
-            
+            </div>
         )
     } 
 }

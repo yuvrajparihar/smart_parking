@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { NavLink as Link,useHistory} from "react-router-dom";
-
+import { NavLink as Link} from "react-router-dom";
+import history from '../history'
 function SignUp() {
-    const history = useHistory();
+    
     const [user, setNote] = useState({
       username: "",
       password: "",

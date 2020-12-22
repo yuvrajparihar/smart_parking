@@ -78,7 +78,8 @@ form.create-note button {
   font-weight: 300;
 }
 
-.button {
+  
+.signupbutton{
   appearance: none;
   outline: 0;
  
@@ -92,9 +93,6 @@ form.create-note button {
   margin-left: 65px;
   margin-bottom: 10px;
   cursor: pointer;
-  
-}
-.signupbutton{
   margin-top: 10px;
 }
 
@@ -107,13 +105,12 @@ form.create-note button {
   text-align: center;
 }
 
-img {
-  height: 20px;
-  width: 20px;
-}
+
 
 .x{
   display: inline;
+  height: 20px;
+  width: 20px;
 }
 .y{
   display: inline-block;
