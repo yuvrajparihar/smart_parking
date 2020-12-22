@@ -17,7 +17,7 @@ class App extends React.Component {
         return(
             <div className='App'>
                 <Router history={history}>
-                <div className='ui container'>
+                <div className="UiContaner">
                     <Header/>
                     <Switch>
                         <Route path='/' exact component={Home}/>
