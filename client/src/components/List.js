@@ -8,7 +8,7 @@ class List extends React.Component {
     
     render(){
         return (
-            <div >
+            <div className="ui container" >
                 <h2>Parking near Vijay Nagar</h2>
                     <div className='ui grid'>
                             <div className='eight wide column'>

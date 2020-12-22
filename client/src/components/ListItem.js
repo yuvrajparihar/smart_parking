@@ -9,7 +9,7 @@ class ListItem  extends React.Component {
                 <div className='list-item item'>
                     <img className='ui image' src="https://i2-prod.manchestereveningnews.co.uk/incoming/article11742783.ece/ALTERNATES/s615/car-park.jpg" alt=''/>
                         
-                        <Link to='/list/description' style={{color:'black'}} className='content'>
+                        <Link to='/list/description' style={{color:'white'}} className='content'>
                             <h3>
                                 Yuvraj car Parking
                             </h3>
