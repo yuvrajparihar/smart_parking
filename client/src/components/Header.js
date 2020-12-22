@@ -1,21 +1,20 @@
-import React from 'react'
-import './Header.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './Header.css';
+import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header=()=> {
     return (
-        <div className='header'>
-        <div className='ui pointing secondary menu'>
+        <div className="navbar" style={{backgroundColor: " rgba(108,117,125,0.3)", padding:"16px 32px"}}>
             <Link to='/' className='item'>
-                <h3>Park here</h3>
+                <h1>Park here</h1>
             </Link>
-            <div className='right menu'>
+            <div className='right'>
                 <Link to='/host' className='item'>Host</Link>
                 <Link to='/signIn' className='item'> SignUp</Link>
                 <Link to='/signUp' className='item'>SignIn</Link>
             </div>
             </div>   
-        </div>
     );
 }
 export default Header
