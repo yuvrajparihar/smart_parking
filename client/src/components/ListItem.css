@@ -3,9 +3,12 @@
     align-items: center;
     cursor: pointer;
     height:125px;
+    color: white;
+    text-decoration: none;
     
 }
 
 .list-item.item img{  
-    max-width: 140px;
+    width: 140px;
+    height: 100px;
     }

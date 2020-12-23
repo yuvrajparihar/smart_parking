@@ -13,6 +13,8 @@ backdrop-filter: blur(2px);
 
 .navbar{
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  
+  
 }
 
 
@@ -109,7 +111,8 @@ form.create-note button {
   font-weight: 300;
 }
 
-.button {
+  
+.signupbutton{
   appearance: none;
   outline: 0;
  
@@ -123,9 +126,6 @@ form.create-note button {
   margin-left: 65px;
   margin-bottom: 10px;
   cursor: pointer;
-  
-}
-.signupbutton{
   margin-top: 10px;
 }
 

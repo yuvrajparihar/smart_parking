@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink as Link,useHistory} from "react-router-dom";
-
+import history from '../history'
 function SignIn() {
-    const history = useHistory();
+    
  
     const [check,setCheck]= useState("");
     const [user, setNote] = useState({
@@ -70,7 +70,7 @@ function SignIn() {
   
         <br />
         <div className="newtokeeper">
-          <p className="y">New to Keeper?</p>
+          <p className="y">New to Park Here?</p>
           <Link to="/signup">
             <p className="up x y">Signup</p>
           </Link>
