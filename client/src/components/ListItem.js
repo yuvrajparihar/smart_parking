@@ -7,11 +7,11 @@ class ListItem  extends React.Component {
         return (
                
                 <div className='list-item item'>
-                    <img className='ui image' src="https://i2-prod.manchestereveningnews.co.uk/incoming/article11742783.ece/ALTERNATES/s615/car-park.jpg" alt=''/>
+                    <img className='ui image' src={this.props.image} alt=''/>
                         
-                        <Link to='/list/description' style={{color:'white'}} className='content'>
+                    <Link to={`/list/description/${this.props.id}`} style={{color:'white',textDecoration:'none'}} className='content'>
                             <h3>
-                                Yuvraj car Parking
+                                {this.props.name}
                             </h3>
                             <div>
                             Best place to park you vechicle at reasonable prices.

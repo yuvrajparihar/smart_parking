@@ -11,8 +11,8 @@ const Header=()=> {
             </Link>
             <div className='right'>
                 <Link style={{textDecoration:'none'}} to='/host' className='item'>Host</Link>
-                <Link style={{textDecoration:'none'}} to='/signIn' className='item'> SignUp</Link>
-                <Link style={{textDecoration:'none'}} to='/signUp' className='item'>SignIn</Link>
+                <Link style={{textDecoration:'none'}} to='/signUp' className='item'> SignUp</Link>
+                <Link style={{textDecoration:'none'}} to='/signIn' className='item'>SignIn</Link>
             </div>
             </div>   
     );

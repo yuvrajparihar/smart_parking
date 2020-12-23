@@ -5,6 +5,7 @@ import Map  from './Map'
 
 class ParkingDescrpition extends React.Component {
     render(){
+        console.log(this.props)
         return (
             <div className='ui container'>
                 <div  className='ui grid'>

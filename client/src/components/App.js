@@ -7,7 +7,7 @@ import Host from './Host'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import List from './List'
-import ParkingDescription from './ParkingDescrpition'
+import ParkingDescription from './ParkingDescrption'
 import ConfirmBooking from './ConfirmBooking'
 import history from '../history'
 
@@ -25,7 +25,7 @@ class App extends React.Component {
                         <Route path='/signIn' exact component={SignIn}/>
                         <Route path='/signUp' exact component={SignUp}/>
                         <Route path='/list' exact component={List}/>
-                        <Route path='/list/description' exact component={ParkingDescription}/>
+                        <Route path='/list/description/:id' exact component={ParkingDescription}/>
                         <Route path='/list/description/confirmBooking' exact component={ConfirmBooking}/>
 
                     </Switch>
