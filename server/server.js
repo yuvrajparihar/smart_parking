@@ -7,6 +7,7 @@ const host = require("./routes/host")
 
 
 const app = express();
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/user",user);
 app.use("/auth",auth);
