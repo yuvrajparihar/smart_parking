@@ -7,7 +7,7 @@ import Host from './Host'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import List from './List'
-import ParkingDescription from './ParkingDescrption'
+import ParkingDescription from './ParkingDescription'
 import ConfirmBooking from './ConfirmBooking'
 import history from '../history'
 

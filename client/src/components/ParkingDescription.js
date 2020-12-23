@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Map  from './Map'
 
 
-class ParkingDescrpition extends React.Component {
+class ParkingDescripition extends React.Component {
     render(){
         console.log(this.props)
         return (
@@ -53,4 +53,4 @@ class ParkingDescrpition extends React.Component {
     }  
 }
 
-export default ParkingDescrpition
+export default ParkingDescripition
