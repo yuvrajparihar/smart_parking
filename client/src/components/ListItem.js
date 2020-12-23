@@ -6,11 +6,11 @@ class ListItem  extends React.Component {
     render(){
         return (
                
-                <div className='list-item item'>
-                    <img className='ui image' src={this.props.image} alt=''/>
+                <div className='list-item item' >
+                    <img className='ui image' src={this.props.image} alt='' style={{borderRadius:"5px"}}/>
                         
-                    <Link to={`/list/description/${this.props.id}`} style={{color:'white',textDecoration:'none'}} className='content'>
-                            <h3>
+                    <Link to={`/list/description/${this.props.id}`} style={{color:'black',textDecoration:'none'}} className='content'>
+                            <h3 style={{color:"#2e368f",fontWeight:"1000"}}>
                                 {this.props.name}
                             </h3>
                             <div>

@@ -19,7 +19,7 @@ backdrop-filter: blur(2px);
 
 
 .navbar h1 {
-  color: #0dcaf0;
+  color:rgb(245, 6, 6);
   /* color: #fff; */
   font-family: "McLaren", cursive;
   font-weight: 500;}
@@ -39,6 +39,24 @@ backdrop-filter: blur(2px);
 .cont-button{
   position: relative;
   margin:  2% 45%;
+}
+.cont-button2{
+  position: relative;
+  margin:  0% 41%;
+}
+.mapview{
+  height: 85%;
+   width: 100%;
+   margin: 40px 20px;
+   border: 1px solid #555
+}
+.secondHome{
+  display: flex;
+  background-color:#D3D3D3;
+  height: 89.5vh;
+}
+.grayscale { 
+  filter: invert(100%); 
 }
 
 form.create-note {

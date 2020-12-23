@@ -9,7 +9,7 @@ function Map() {
         zoom: 12
       });
     return (
-        <div style={{ height: '550px', width: '100%' }}>
+        <div className="mapview">
             <ReactMapGL
                 {...viewport}
                 mapboxApiAccessToken='pk.eyJ1IjoiYXRpc2hheXpuIiwiYSI6ImNraXlkbDFwajI2enUyem40dGVueHBjaTcifQ.fxrqIh5G0UPvHWU3HUen_Q'
