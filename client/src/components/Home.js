@@ -1,30 +1,52 @@
 import React from 'react'
-import {Field,reduxForm} from 'redux-form'
+import {Field,formValues,reduxForm} from 'redux-form'
+import history from '../history'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Home extends React.Component {
+    state={
+        myLocation:{lat:null,long:null}}
     renderInput({input,meta}){
-        console.log(meta.error)
         return(
-            <div className='field'>
-            <input {...input} autoComplete='off' placeholder='location..'/>
+            <div className="cont">         
+            <div className="input-group input-group-lg field" style={{width: "400px",display:"block" ,fontSize: "1.2em"}}>
+            <input {...input} type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+            autoComplete='off' placeholder='location..'></input>
             <div className="ui error message">
             {meta.touched && meta.error}
             </div>
             </div>
+            </div>
+
         )
+
     }
-    onSubmit(formValues){
+    onSubmit= async (formValues)=>{
         console.log(formValues)
+        history.push('/list')
     }
-    render(){
+    onLocationsubmit=() =>{
+            window.navigator.geolocation.getCurrentPosition(
+            position => this.setState({ ...this.state.myLocation, lat: position.coords.latitude, long: position.coords.longitude }),
+            err => { console.log(err.message); }
+        )
+        
+    }
+    render(){ 
+            console.log(this.state)
         return (
-            
+            <div>
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui error form">
                     <Field name='location' component={this.renderInput}/>
-                    <button className='ui primary button'>Search</button>
+                    <button  className="btn btn-info cont-button" style={{fontSize: "1.6em",backgroundColor: "#0dcaf0"}}>Search</button>
                 </form>
-            
+                <button onClick={this.onLocationsubmit} className="btn btn-info cont-button" style={{fontSize: "1.6em",backgroundColor: "#0dcaf0"}}>
+                    Find Parkings Nearby
+                    <i className='location arrow icon'></i>
+                    </button>
+        
+            </div>
         )
     } 
 }
