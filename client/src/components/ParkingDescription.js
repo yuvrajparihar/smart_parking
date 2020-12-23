@@ -4,8 +4,27 @@ import Map  from './Map'
 
 
 class ParkingDescripition extends React.Component {
+   
+    componentDidMount(){
+     
+       const park_id=this.props.match.params.id;
+        fetch("http://localhost:5000/user/parkingDetails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+     
+      },
+      body: JSON.stringify({ park_id:park_id }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+      });
+
+    }
+
     render(){
-        console.log(this.props)
+       
         return (
             <div className='ui container'>
                 <div  className='ui grid'>

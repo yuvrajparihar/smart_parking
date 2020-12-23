@@ -38,10 +38,10 @@ router.post("/bookings", function (req, res) {
 
 });
 
-router.post("/parkings", function (req, res) {
+router.post("/parkingDetails", function (req, res) {
   mysqlConnnection.query(
-    "SELECT * FROM hotel WHERE HOTEL_ID=?",
-    ["HOTEL_NAME", 1],
+    "SELECT * FROM parking_details WHERE parking_id=?",
+    [req.body.park_id],
     function (err, rows, field) {
       if (err) {
         console.log(err);
@@ -51,7 +51,7 @@ router.post("/parkings", function (req, res) {
     }
   );
 });
-router.get("/parkingDetails", function (req, res) {
+router.get("/parkings", function (req, res) {
   mysqlConnnection.query(
     "SELECT parking_id,p_name,latitude,longitude,p_description,fare_car,fare_bike,address,spots,verified,owner_id,bike_spots FROM parking_details",
     function (err, rows, field) {
