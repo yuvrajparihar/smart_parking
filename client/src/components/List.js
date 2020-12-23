@@ -1,20 +1,40 @@
 import React from 'react'
 import './List.css'
 import ListItem from './ListItem'
-import Map from './Map'
+
 
 
 class List extends React.Component {
-
-    
     render(){
         return (
-            <div className="ui container" >
+            <div style={{height:"100vh",overflowY:"scroll"}} className="ui container" >
                 <h2>Parking in Jabalpur</h2>
-                    <div className='ui grid'>
-                            <div className='eight wide column'>
+                
                                 <div className='listItems ui  relaxed divided list '>
                                 <ListItem
+                                    id='0'
+                                    name="Chikna Parking"
+                                    address=''
+                                    fair={65}
+                                    image='https://d2uqqhmijd5j2z.cloudfront.net/files/321814/gallery/Screenshot_2.jpg?1543927700'
+                                    summary='The entrance to this lot is on 175 Jessie St and is across the street from two exit lanes of another garage.'
+                                    /> 
+                                    <ListItem
+                                    id='0'
+                                    name="Chikna Parking"
+                                    address=''
+                                    fair={65}
+                                    image='https://d2uqqhmijd5j2z.cloudfront.net/files/321814/gallery/Screenshot_2.jpg?1543927700'
+                                    summary='The entrance to this lot is on 175 Jessie St and is across the street from two exit lanes of another garage.'
+                                    /> <ListItem
+                                    id='0'
+                                    name="Chikna Parking"
+                                    address=''
+                                    fair={65}
+                                    image='https://d2uqqhmijd5j2z.cloudfront.net/files/321814/gallery/Screenshot_2.jpg?1543927700'
+                                    summary='The entrance to this lot is on 175 Jessie St and is across the street from two exit lanes of another garage.'
+                                    /> 
+                                    <ListItem
                                     id='0'
                                     name="Chikna Parking"
                                     address=''
@@ -57,11 +77,8 @@ class List extends React.Component {
                                        
                                 </div> 
                             </div>
-                            <div className='eight wide column'>
-                               <Map/>
-                            </div>
-                    </div>
-            </div>
+                           
+                   
         )
 
     }
