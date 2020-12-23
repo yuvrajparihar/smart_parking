@@ -39,9 +39,9 @@ class Home extends React.Component {
             <div>
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui error form">
                     <Field name='location' component={this.renderInput}/>
-                    <button  className="btn btn-info cont-button" style={{fontSize: "1.6em",backgroundColor: "#0dcaf0"}}>Search</button>
+                    <button  className="btn btn-info cont-button" style={{fontSize: "1.6em",backgroundColor: "rgb(245, 6, 6)",borderColor: "rgb(245, 6, 6)"}}>Search</button>
                 </form>
-                <button onClick={this.onLocationsubmit} className="btn btn-info cont-button" style={{fontSize: "1.6em",backgroundColor: "#0dcaf0"}}>
+                <button onClick={this.onLocationsubmit} className="btn btn-info cont-button2" style={{fontSize: "1.2em",backgroundColor: "rgb(245, 6, 6)",borderColor: "rgb(245, 6, 6)"}}>
                     Find Parkings Nearby
                     <i className='location arrow icon'></i>
                     </button>

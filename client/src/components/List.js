@@ -24,13 +24,13 @@ class List extends React.Component {
 
   render() {
     return (
+    
       <div
-        style={{ height: "100vh", overflowY: "scroll" }}
         className="ui container"
       >
-        <h2>Parking in Jabalpur</h2>
-
-        <div className="listItems ui  relaxed divided list ">
+       <h2 style={{position:"fixed",padding:"16px"}}>Parking in Jabalpur</h2>
+       <div style={{overflowY: "scroll" ,height:"70vh",marginTop:"70px",  border: "1px solid #555",backgroundColor:"white"}}>
+        <div className="listItems ui  relaxed divided list " style={{padding:"5px"}}>
           <ListItem
             id="0"
             name="Chikna Parking"
@@ -95,6 +95,7 @@ class List extends React.Component {
             image="https://i2-prod.manchestereveningnews.co.uk/incoming/article11742783.ece/ALTERNATES/s615/car-park.jpg"
             summary="The entrance to this lot is on 175 Jessie St and is across the street from two exit lanes of another garage."
           />
+        </div>
         </div>
       </div>
     );
