@@ -58,7 +58,9 @@ backdrop-filter: blur(2px);
 .grayscale { 
   filter: invert(100%); 
 }
-
+.ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+  width: 38.75%!important;
+}
 form.create-note {
   position: relative;
   width: 480px;
