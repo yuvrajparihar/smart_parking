@@ -7,17 +7,18 @@ class List extends React.Component {
 
     componentDidMount(){
        
-        fetch("http://localhost:5000/user/parkings", {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json;charset=utf-8",
-            },
-          })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data)
-            
-            });
+      fetch("http://localhost:5000/user/parkings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+       
+        },
+        body: JSON.stringify({ lat:23.195102 ,lng:79.99634396 }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+        });
 
     }
 
