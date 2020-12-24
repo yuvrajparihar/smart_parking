@@ -37,8 +37,8 @@ class ParkingDescripition extends React.Component {
                             <div className='content'>
                                 <h2>{this.state.parking.p_name} </h2>
                                 <h5>{this.state.parking.address}</h5>
-                                <h4>{`Car Fare : ₹ ${this.state.parking.fare_car}`}</h4>
-                                <h5>{`Bike Fare : ₹ ${this.state.parking.fare_bike}`}</h5>
+                                <h4>{`Car Fare :  ${this.state.parking.fare_car==null?"Not Available":`₹ ${this.state.parking.fare_bike} /day`} `}</h4>
+                                <h5>{`Bike Fare : ₹ ${this.state.parking.fare_bike} /day`}</h5>
                             </div>
                             <div className='content'>
                                 <h4>About This Facility</h4>

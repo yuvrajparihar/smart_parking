@@ -30,8 +30,6 @@ class App extends React.Component {
                         <Route path='/description/:id' exact component={ParkingDescription}/>
                         <Route path='/bookingDetails/:id' exact component={BookingDetails}/>
                         <Route path='/confirmBooking' exact component={ConfirmBooking}/>
-                        
-
                     </Switch>
                         
                 </div> 

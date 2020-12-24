@@ -6,57 +6,54 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
-body{
-background-image: url("https://www.thenbs.com/-/media/uk/new-images/by-section/knowledge/knowledge-articles-hero/multi-storey-car-park.jpg?as=1&w=1920&hash=E13FAC2B2C598C30D7DB74588E987B9DAF63F798");
-backdrop-filter: blur(2px); 
+body {
+  background-image: url("https://www.thenbs.com/-/media/uk/new-images/by-section/knowledge/knowledge-articles-hero/multi-storey-car-park.jpg?as=1&w=1920&hash=E13FAC2B2C598C30D7DB74588E987B9DAF63F798");
+  backdrop-filter: blur(2px);
 }
 
-.navbar{
+.navbar {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  
-  
 }
-
 
 .navbar h1 {
-  color:rgb(245, 6, 6);
+  color: rgb(245, 6, 6);
   /* color: #fff; */
   font-family: "McLaren", cursive;
-  font-weight: 500;}
+  font-weight: 500;
+}
 
-.field{
-  
+.field {
   background: rgba(250, 248, 248, 0.2);
   display: block;
   margin: 0 auto;
   padding: 15px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-.cont{
+.cont {
   position: relative;
-  margin: 15% 0 0  35%;
+  margin: 15% 0 0 35%;
 }
-.cont-button{
+.cont-button {
   position: relative;
-  margin:  2% 45%;
+  margin: 2% 45%;
 }
-.cont-button2{
+.cont-button2 {
   position: relative;
-  margin:  0% 41%;
+  margin: 0% 41%;
 }
-.mapview{
+.mapview {
   height: 85%;
-   width: 100%;
-   margin: 40px 20px;
-   border: 1px solid #555
+  width: 100%;
+  margin: 40px 20px;
+  border: 1px solid #555;
 }
-.secondHome{
+.secondHome {
   display: flex;
-  background-color:#D3D3D3;
+  background-color: #d3d3d3;
   height: 89.5vh;
 }
-.grayscale { 
-  filter: invert(100%); 
+.grayscale {
+  filter: invert(100%);
 }
 
 form.create-note {
@@ -125,19 +122,18 @@ form.create-note button {
   display: block;
   text-align: center;
   font-size: 18px;
-  columns: #333333;;
+  columns: #333333;
   font-weight: 300;
 }
 
-  
-.signupbutton{
+.signupbutton {
   appearance: none;
   outline: 0;
- 
+
   background-color: rgb(34, 30, 30);
   border: 0;
   padding: 10px 15px;
-  color:  #fff;
+  color: #fff;
   border-radius: 7px;
   width: 300px;
   font-size: 18px;
@@ -147,21 +143,20 @@ form.create-note button {
   margin-top: 10px;
 }
 
-.button:hover{
+.button:hover {
   /* background-color: rgb(109, 109, 109); */
   color: #f5ba13;
-
 }
 .or {
   text-align: center;
 }
 
-.x{
+.x {
   display: inline;
   height: 20px;
   width: 20px;
 }
-.y{
+.y {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -174,12 +169,11 @@ form.create-note button {
   background-color: #fff;
   padding: 9px;
   border-radius: 10px;
- 
+
   margin-left: 31%;
   display: block;
   cursor: pointer;
   border: 0;
-
 }
 /* .google:hover{
   background-color: rgb(109, 109, 109);
@@ -187,7 +181,7 @@ form.create-note button {
   text-decoration: none;
 } */
 
-.bold{
+.bold {
   color: #555555;
   font-size: 18px;
   font-family: Montserrat;
@@ -195,11 +189,11 @@ form.create-note button {
   padding-top: 12px;
   padding-left: 7px;
 }
-.newtokeeper{
+.newtokeeper {
   margin-left: 30%;
   margin-bottom: 20px;
 }
-.sign{
+.sign {
   margin-bottom: 20px;
   text-align: center;
 }
@@ -207,20 +201,20 @@ form.create-note button {
   color: #fab801;
 } */
 
-.confirm{
+.confirm {
   margin-bottom: 2px;
 }
-.match{
+.match {
   margin-left: 66px;
   color: red;
   font-size: 14px;
   margin-bottom: 0px;
 }
-.mail{
+.mail {
   margin-left: 82%;
   padding: 5px;
   background-color: #fff;
   border-radius: 10px;
-  border: 0;  
+  border: 0;
   cursor: pointer;
 }
