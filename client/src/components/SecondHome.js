@@ -5,7 +5,7 @@ import Map from './Map'
 class SecondHome extends React.Component {
     render(){
     return (
-        <div style={{display:'flex'}}>
+        <div className="secondHome">
             <List/>
             <Map/>
         </div>

@@ -5,14 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header=()=> {
     return (
-        <div className="navbar" style={{backgroundColor: " rgba(108,117,125,0.3)", padding:"16px 32px"}}>
+        <div className="navbar" style={{backgroundColor: "black", padding:"10px 32px"}}>
             <Link style={{textDecoration:'none'}} to='/' className='item'>
-                <h1>Park here</h1>
+                <h1><img src="https://cdn.iconscout.com/icon/free/png-512/p-6-675564.png" height="50px" className="grayscale"/>
+               <span style={{color:'white'}}>ark</span>Here</h1>
             </Link>
             <div className='right'>
-                <Link style={{textDecoration:'none'}} to='/host' className='item'>Host</Link>
-                <Link style={{textDecoration:'none'}} to='/signUp' className='item'> SignUp</Link>
-                <Link style={{textDecoration:'none'}} to='/signIn' className='item'>SignIn</Link>
+                <Link style={{textDecoration:'none',fontWeight:"500"}} to='/host' className='item'>Host</Link>
+                <Link style={{textDecoration:'none',fontWeight:"500"}} to='/signUp' className='item'> SignUp</Link>
+                <Link style={{textDecoration:'none',fontWeight:"500"}} to='/signIn' className='item'>SignIn</Link>
             </div>
             </div>   
     );

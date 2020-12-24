@@ -24,7 +24,7 @@ class ParkingDescripition extends React.Component {
     }
 
     render(){
-       
+        const {id}=this.props.match.params;
         return (
             <div className='ui container'>
                 <div  className='ui grid'>
@@ -34,7 +34,7 @@ class ParkingDescripition extends React.Component {
                             <div className='content'>
                                 <h2>Yuvraj Parking </h2>
                                 Damoh Naka
-                                <h4>Fair : ₹ 100 </h4>
+                                <h4>Fare : ₹ 100 </h4>
                                 
                             </div>
                             <div className='content'>
@@ -49,7 +49,7 @@ class ParkingDescripition extends React.Component {
                                 </div>
                             </div>
                             <div  className='extra button'>
-                            <Link to="/list/description/confirmBooking">
+                            <Link to={`/bookingDetails/${id}`}>
                             <button  className='ui primary button'>
                             BOOK NOW
                             </button> 
