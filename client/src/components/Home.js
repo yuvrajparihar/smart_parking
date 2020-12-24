@@ -5,8 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Home extends React.Component {
-    state={
-        myLocation:{lat:null,long:null}}
+    
     renderInput({input,meta}){
         return(
             <div className="cont">         
@@ -27,14 +26,20 @@ class Home extends React.Component {
         history.push('/list')
     }
     onLocationsubmit=() =>{
+        
+            const myLocation={lat:null,long:null}
+
             window.navigator.geolocation.getCurrentPosition(
-            position => this.setState({ ...this.state.myLocation, lat: position.coords.latitude, long: position.coords.longitude }),
+            position =>{myLocation.lat=position.coords.latitude;
+                myLocation.long=position.coords.longitude;
+                console.log(myLocation)},
             err => { console.log(err.message); }
         )
         
+        
     }
     render(){ 
-            console.log(this.state)
+            
         return (
             <div>
                 <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui error form">

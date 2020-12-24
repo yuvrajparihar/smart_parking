@@ -11,6 +11,7 @@ import ParkingDescription from './ParkingDescription'
 import ConfirmBooking from './ConfirmBooking'
 import history from '../history'
 import SecondHome from './SecondHome'
+import BookingDetails from './BookingDetails'
 
 
 class App extends React.Component {
@@ -26,8 +27,10 @@ class App extends React.Component {
                         <Route path='/signIn' exact component={SignIn}/>
                         <Route path='/signUp' exact component={SignUp}/>
                         <Route path='/list' exact component={SecondHome}/>
-                        <Route path='/list/description/:id' exact component={ParkingDescription}/>
-                        <Route path='/list/description/confirmBooking' exact component={ConfirmBooking}/>
+                        <Route path='/description/:id' exact component={ParkingDescription}/>
+                        <Route path='/bookingDetails/:id' exact component={BookingDetails}/>
+                        <Route path='/confirmBooking' exact component={ConfirmBooking}/>
+                        
 
                     </Switch>
                         
