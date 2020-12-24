@@ -29,10 +29,9 @@ class ParkingDescripition extends React.Component {
             return(<div>Loading..</div>)
         }
         return (
-            <div className='ui container'>
+            <div className='ui container' style={{margin:"0" ,backgroundColor:"#D3D3D3" ,height:"91vh",width:"100%"}}>
                 <div  className='ui grid'>
-                    <div className='seven wide column'>
-                        
+                    <div className='seven wide column desc' style={{marginTop:"30px"}}>
                         <div style={{width:'100%'}} className='ui card'>
                             <div className='content'>
                                 <h2>{this.state.parking.p_name} </h2>
@@ -64,7 +63,7 @@ class ParkingDescripition extends React.Component {
                         
                         
                     </div>
-                    <div className='nine wide column'>
+                    <div className='nine wide column' style={{textAlign:"center"}}>
                         <Map/>    
                     </div>
 
