@@ -25,7 +25,7 @@ function SignUp() {
      
       event.preventDefault();
      if(user.password===user.confirmPassword){
-      fetch("http://localhost:5000/auth/user/register", {
+      fetch("http://localhost:5000/auth/host/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",

@@ -11,7 +11,7 @@ const Header=()=> {
                <span style={{color:'white'}}>ark</span>Here</h1>
             </Link>
             <div className='right'>
-                <Link style={{textDecoration:'none',fontWeight:"500"}} to='/host' className='item'>Host</Link>
+                <Link style={{textDecoration:'none',fontWeight:"500"}} to='/hostsignin' className='item'>Host</Link>
                 <Link style={{textDecoration:'none',fontWeight:"500"}} to='/signUp' className='item'> SignUp</Link>
                 <Link style={{textDecoration:'none',fontWeight:"500"}} to='/signIn' className='item'>SignIn</Link>
             </div>
