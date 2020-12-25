@@ -17,10 +17,10 @@ class ListItem  extends React.Component {
                             {this.props.address}
                             </div>
                             <h5 style={{marginTop:'10px'}}>
-                                {`Car Fare :  ${this.props.carFare==null?"Not Available":`₹ ${this.props.carFare} /day`} `}
+                                {`Car Fare :  ${this.props.carFare==null?"Not Available":`₹ ${this.props.carFare} /hour`} `}
                             </h5>
                             <h6>
-                            {`Bike Fare : ₹ ${this.props.bikeFare} /day`}
+                            {`Bike Fare : ₹ ${this.props.bikeFare} /hour`}
                             </h6>
                         </Link>
                 </div>

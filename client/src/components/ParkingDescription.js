@@ -29,15 +29,16 @@ class ParkingDescripition extends React.Component {
             return(<div>Loading..</div>)
         }
         return (
-            <div className='ui container' style={{margin:"0" ,backgroundColor:"#D3D3D3" ,height:"91vh",width:"100%"}}>
+            <div className='ui container'>
                 <div  className='ui grid'>
-                    <div className='seven wide column desc' style={{marginTop:"30px"}}>
+                    <div className='seven wide column'>
+                        
                         <div style={{width:'100%'}} className='ui card'>
                             <div className='content'>
                                 <h2>{this.state.parking.p_name} </h2>
                                 <h5>{this.state.parking.address}</h5>
-                                <h4>{`Car Fare :  ${this.state.parking.fare_car==null?"Not Available":`₹ ${this.state.parking.fare_bike} /day`} `}</h4>
-                                <h5>{`Bike Fare : ₹ ${this.state.parking.fare_bike} /day`}</h5>
+                                <h4>{`Car Fare :  ${this.state.parking.fare_car==null?"Not Available":`₹ ${this.state.parking.fare_bike} / hour`} `}</h4>
+                                <h5>{`Bike Fare : ₹ ${this.state.parking.fare_bike} / hour`}</h5>
                             </div>
                             <div className='content'>
                                 <h4>About This Facility</h4>
@@ -63,8 +64,8 @@ class ParkingDescripition extends React.Component {
                         
                         
                     </div>
-                    <div className='nine wide column' style={{textAlign:"center"}}>
-                        <Map/>    
+                    <div className='nine wide column'>
+                        <Map latitude={23.1951027} longitude={79.99634396} offsetLeft={-20} offsetTop={-10}/>    
                     </div>
 
                 </div>
