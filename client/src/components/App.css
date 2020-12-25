@@ -49,12 +49,25 @@
   }
   .secondHome {
     display: flex;
-    background-color: #d3d3d3;
+    background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
     height: 89.5vh;
   }
   .grayscale {
     filter: invert(100%);
   }
+  .bookdetails{
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/green-gobbler.png");
+      height: 89.5vh;
+  }
+  .bookdetails h2{
+    color: #2e368f;
+    margin-left: 10%;
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+ 
   
   form.create-note {
     position: relative;
