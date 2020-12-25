@@ -11,6 +11,8 @@ import ConfirmBooking from './ConfirmBooking'
 import history from '../history'
 import SecondHome from './SecondHome'
 import BookingDetails from './BookingDetails'
+import HostSignIn from './HostSignIn'
+import HostSignUp from './HostSignUP'
 
 
 class App extends React.Component {
@@ -22,7 +24,8 @@ class App extends React.Component {
                     <Header/>
                     <Switch>
                         <Route path='/' exact component={Home}/>
-                        <Route path='/host' exact component={Host}/>
+                        <Route path='/hostsignin' exact component={HostSignIn}/>
+                        <Route path='/hostsignup' exact component={HostSignUp}/>
                         <Route path='/signIn' exact component={SignIn}/>
                         <Route path='/signUp' exact component={SignUp}/>
                         <Route path='/list' exact component={SecondHome}/>

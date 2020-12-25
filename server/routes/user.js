@@ -50,7 +50,7 @@ router.post("/parkingDetails", function (req, res) {
 });
 router.post("/parkings", function (req, res) {
 
-  mysqlConnnection.query(
+   mysqlConnnection.query(
     "SELECT parking_id,p_name,latitude,longitude,p_description,fare_car,fare_bike,address,spots,verified,owner_id,bike_spots,( 6371 * acos( cos( radians(?) ) * cos( radians( latitude ) ) *\
     cos( radians( longitude ) - radians(?) ) + sin( radians(?) ) *sin( radians( latitude ) ) ) ) AS distance FROM parking_details HAVING\
     distance < 2 ORDER BY distance LIMIT 0 , 20",

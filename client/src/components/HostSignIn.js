@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as Link,useHistory} from "react-router-dom";
 import history from '../history'
+
 function SignIn() {
     
  
@@ -25,7 +26,7 @@ function SignIn() {
     function signIn(event) {
   
       event.preventDefault();
-      fetch("http://localhost:5000/auth/user/login", {
+      fetch("http://localhost:5000/auth/host/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -46,7 +47,7 @@ function SignIn() {
           else if(data.response==="notRegistered"){
               setCheck("User not registered");
           }
-          
+
         });
     }
   
@@ -73,7 +74,7 @@ function SignIn() {
         <br />
         <div className="newtokeeper">
           <p className="y">New to Park Here?</p>
-          <Link to="/signup">
+          <Link to="/hostsignup">
             <p className="up x y">Signup</p>
           </Link>
         </div>
