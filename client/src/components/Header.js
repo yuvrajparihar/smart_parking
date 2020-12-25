@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header=()=> {
     return (
-        <div className="navbar" style={{backgroundColor: "black", padding:"10px 32px"}}>
+        <div className="navbar" style={{backgroundColor: "grey", padding:"10px 32px"}}>
             <Link style={{textDecoration:'none'}} to='/' className='item'>
                 <h1><img src="https://cdn.iconscout.com/icon/free/png-512/p-6-675564.png" height="50px" className="grayscale"/>
                <span style={{color:'white'}}>ark</span>Here</h1>
