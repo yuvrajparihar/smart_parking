@@ -39,7 +39,9 @@ function SignUp() {
             setPass("User is already registered");
           }
           else{
-            console.log(data)
+            window.sessionStorage.setItem("type", "user");
+            window.sessionStorage.setItem("email",data.userData.email_id );
+            window.sessionStorage.setItem("isSignedIn","yes");
             // const accessToken = data.token;
             // window.sessionStorage.setItem("jwtToken",accessToken);
           //  history.push("/home");

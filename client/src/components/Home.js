@@ -5,8 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Home extends React.Component {
-    
+   
+
     renderInput({input,meta}){
+        const temp=window.sessionStorage.getItem("type");
+        // window.sessionStorage.removeItem("type"); used for removing this keys
+        console.log(temp)
         return(
             <div className="cont">         
             <div className="input-group input-group-lg field" style={{width: "400px",display:"block" ,fontSize: "1.2em"}}>

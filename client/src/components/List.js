@@ -6,6 +6,11 @@ class List extends React.Component {
   state={parkingList:[]}
 
     componentDidMount(){
+      const temp=window.sessionStorage.getItem("type");
+      const temp1=window.sessionStorage.getItem("email");
+      const temp2=window.sessionStorage.getItem("isSignedIn");
+
+      console.log(temp,temp1,temp2)
       fetch("http://localhost:5000/user/parkings", {
         method: "POST",
         headers: {

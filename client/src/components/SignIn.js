@@ -35,9 +35,14 @@ function SignIn() {
         .then((response) => response.json())
         .then((data) => {
           if(data.token){
-            console.log(data.userData)
-          //   const accessToken = data.token;
-          //  window.sessionStorage.setItem("jwtToken",accessToken);
+          
+            // const accessToken = data.token;
+          
+         
+           window.sessionStorage.setItem("type", "user");
+           window.sessionStorage.setItem("email",data.userData.email_id );
+           window.sessionStorage.setItem("isSignedIn","yes");
+
           // history.push("/home");
           }
           else if(data.response==="wrong"){

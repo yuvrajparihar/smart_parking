@@ -40,6 +40,9 @@ function SignUp() {
           }
           else{
             console.log(data)
+            window.sessionStorage.setItem("type", "host");
+            window.sessionStorage.setItem("email",data.userData.email_id );
+            window.sessionStorage.setItem("isSignedIn","yes");
             // const accessToken = data.token;
             // window.sessionStorage.setItem("jwtToken",accessToken);
           //  history.push("/home");
