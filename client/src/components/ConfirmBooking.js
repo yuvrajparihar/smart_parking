@@ -8,18 +8,17 @@ class ConfirmBooking extends React.Component{
     renderActions(){
         return(
             <React.Fragment>
-            <button className='ui button negative'>Book</button>
-            <Link to='/description' className='ui button'>Cancel</Link>
+                <Link to='/' className='ui primary button'>OK</Link>
             </React.Fragment>
         );
     }
     render(){
         return (
             <div>
-            <Modal title='Confirm Booking' 
-            content="Are you sure you want to book a slot?"
+            <Modal title='Booking Done!!' 
+            content="Your booking has been confirmed please check in previous booking section"
             actions={this.renderActions()}
-            onDismiss={()=>history.push('/description')}
+            onDismiss={()=>history.push('/')}
             />
             </div>
         )

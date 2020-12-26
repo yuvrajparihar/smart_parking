@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Router,Route,Switch } from 'react-router-dom'
 import './App.css'
 import Header from './Header'
@@ -13,10 +13,11 @@ import SecondHome from './SecondHome'
 import BookingDetails from './BookingDetails'
 import HostSignIn from './HostSignIn'
 import HostSignUp from './HostSignUP'
+import PreviousBooking from './PreviousBooking'
 
 
-class App extends React.Component {
-    render(){
+function App() {
+        
         return(
             <div className='App'>
                 <Router history={history}>
@@ -32,6 +33,7 @@ class App extends React.Component {
                         <Route path='/description/:id' exact component={ParkingDescription}/>
                         <Route path='/bookingDetails/:id' exact component={BookingDetails}/>
                         <Route path='/confirmBooking' exact component={ConfirmBooking}/>
+                        <Route path='/previousBookings' exact component={PreviousBooking}/>
                     </Switch>
                         
                 </div> 
@@ -39,7 +41,7 @@ class App extends React.Component {
             </div>
         );
 
-    }
+    
 }
 
 export default App

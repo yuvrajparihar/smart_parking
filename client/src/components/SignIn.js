@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { NavLink as Link,useHistory} from "react-router-dom";
+import { NavLink as Link} from "react-router-dom";
 import history from '../history'
+
 function SignIn() {
-    
- 
     const [check,setCheck]= useState("");
     const [user, setNote] = useState({
       username: "",
@@ -36,9 +35,9 @@ function SignIn() {
         .then((data) => {
           if(data.token){
             console.log(data.userData)
-          //   const accessToken = data.token;
-          //  window.sessionStorage.setItem("jwtToken",accessToken);
-          // history.push("/home");
+          const accessToken = data.token;
+          //window.sessionStorage.setItem("jwtToken",accessToken);
+           //history.push("/home");
           }
           else if(data.response==="wrong"){
             setCheck("Wrong password");

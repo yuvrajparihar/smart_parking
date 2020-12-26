@@ -3,7 +3,6 @@ import {Field,formValues,reduxForm} from 'redux-form'
 import history from '../history'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 class Home extends React.Component {
     
     renderInput({input,meta}){

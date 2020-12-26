@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { NavLink as Link,useHistory} from "react-router-dom";
-import history from '../history'
+import { NavLink as Link} from "react-router-dom"
 
 function SignIn() {
     

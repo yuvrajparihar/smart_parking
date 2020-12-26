@@ -29,7 +29,7 @@ class ParkingDescripition extends React.Component {
             return(<div>Loading..</div>)
         }
         return (
-            <div className='ui container'>
+            <div className='ui container' style={{margin:"0" ,backgroundColor: "#ffffff", backgroundImage: 'url("https://www.transparenttextures.com/patterns/green-gobbler.png")',height:"91vh",width:"100%"}}>
                 <div  className='ui grid'>
                     <div className='seven wide column'>
                         
@@ -65,7 +65,7 @@ class ParkingDescripition extends React.Component {
                         
                     </div>
                     <div className='nine wide column'>
-                        <Map latitude={23.1951027} longitude={79.99634396} offsetLeft={-20} offsetTop={-10}/>    
+                        <Map latitude={this.state.parking.latitude} longitude={this.state.parking.longitude} name={this.state.parking.p_name} />    
                     </div>
 
                 </div>

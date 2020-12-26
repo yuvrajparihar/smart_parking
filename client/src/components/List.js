@@ -2,26 +2,11 @@ import React,{useState} from "react";
 import "./List.css";
 import ListItem from "./ListItem";
 
+
 class List extends React.Component {
-  state={parkingList:[]}
-
-    componentDidMount(){
-      fetch("http://localhost:5000/user/parkings", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-       
-        },
-        body: JSON.stringify({ lat:23.195102 ,lng:79.99634396 }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          this.setState({parkingList:data});
-        });
-
-    }
+    
     renderList(){
-      return this.state.parkingList.map(parking=>{
+      return this.props.parkingList.map(parking=>{
         return(
           <ListItem
             key={parking.parking_id}
@@ -39,7 +24,7 @@ class List extends React.Component {
 
 
   render() {
-    console.log(this.state.parkingList)
+    
     return (
       
       <div
@@ -48,10 +33,7 @@ class List extends React.Component {
        <h2 style={{position:"fixed",padding:"16px"}}>Parking in Jabalpur</h2>
        <div style={{overflowY: "scroll" ,height:"75vh",marginTop:"60px",  border: "1px solid #555",backgroundColor:"white"}}>
         <div className="listItems ui  relaxed divided list " style={{padding:"5px"}}>
-          {this.renderList()}
-          
-          
-          
+          {this.renderList()}        
           
         </div>
         </div>
