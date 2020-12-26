@@ -35,7 +35,7 @@ router.post("/user/login", function (req, res) {
         if (rows.length < 1) {
           res.send({ response: "notRegistered" });
         } else {
-          console.log(rows[0].pswd);
+       
           if (rows[0].pswd == req.body.password) {
         
             res.send({ token: "hello" ,
@@ -66,14 +66,20 @@ router.post("/user/register", function (req, res) {
               if (err) {
                 console.log(err);
               } else {
-                console.log(rows);
-                res.send({ response: "Registered" });
+              
+                mysqlConnnection.query( "SELECT * FROM users WHERE email_id=?",
+                [req.body.email], function (err, result, field) {
+                  if (err) {
+                    console.log(err);
+                  } else {
+                    res.send({ response: "Registered", userData:result[0]  });
+                  }})
               }
             }
           );
         } else {
-          console.log(rows[0]);
-          res.send({ response: "alreadyRegistered" });
+        
+          res.send({ response: "alreadyRegistered"});
         }
         // res.send(rows);
       }
@@ -92,7 +98,7 @@ router.post("/host/login", function (req, res) {
         if (rows.length < 1) {
           res.send({ response: "notRegistered" });
         } else {
-          console.log(rows[0].pswd);
+     
           if (rows[0].pswd == req.body.password) {
             res.send({ token: "hello" ,
                        userData:rows[0] });
@@ -122,14 +128,21 @@ router.post("/host/register", function (req, res) {
               if (err) {
                 console.log(err);
               } else {
-                console.log(rows);
-                res.send({ response: "Registered" });
+               
+                mysqlConnnection.query( "SELECT * FROM owners WHERE email_id=?",
+                [req.body.email], function (err, result, field) {
+                  if (err) {
+                    console.log(err);
+                  } else {
+                    res.send({ response: "Registered", userData:result[0]  });
+                  }})
+               
               }
             }
           );
         } else {
           console.log(rows[0]);
-          res.send({ response: "alreadyRegistered" });
+          res.send({ response: "alreadyRegistered"  });
         }
         // res.send(rows);
       }
